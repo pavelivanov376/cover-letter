@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Pavel Ivanov – Cover Letter</title>
+
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=DM+Serif+Display&display=swap" rel="stylesheet">
+
+<style>
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --accent: #1a3a5c;
+    --accent-light: #2563a8;
+    --text: #15171a;       /* darker main text for readability */
+    --muted: #2f3742;      /* darker paragraph color */
+    --border: #dde2ea;
+    --bg: #f6f8fb;
+    --white: #ffffff;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    font-size: 14px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+}
+
+.page {
+    max-width: 820px;
+    margin: 40px auto;
+    background: var(--white);
+    box-shadow:
+        0 2px 8px rgba(0,0,0,0.04),
+        0 12px 40px rgba(0,0,0,0.06);
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+/* subtle accent header line */
+.page::before {
+    content: "";
+    display: block;
+    height: 4px;
+    background: linear-gradient(
+        90deg,
+        var(--accent),
+        var(--accent-light)
+    );
+}
+
+.content {
+    padding: 44px 54px 46px;
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h2 {
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--accent-light);
+    margin-bottom: 26px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--border);
+}
+
+p {
+    margin-bottom: 18px;
+    color: var(--muted);
+    font-size: 0.97rem;
+    line-height: 1.72;
+    text-align: justify;
+    text-justify: inter-word;
+    hyphens: auto;
+    orphans: 2;
+    widows: 2;
+}
+
+.greeting {
+    font-weight: 500;
+    color: var(--text);
+    margin-bottom: 24px;
+    text-align: left;
+    font-size: 1rem;
+}
+
+p:first-of-type + p {
+    color: #1f2732;  /* slightly stronger first paragraph */
+}
+
+strong {
+    font-weight: 600;
+    color: var(--text);
+}
+
+.signature {
+    margin-top: 40px;
+    color: var(--text);
+    font-weight: 500;
+    text-align: left;
+    line-height: 1.6;
+    font-size: 0.97rem;
+}
+
+.content p:last-of-type {
+    margin-bottom: 0;
+}
+
+/* print optimization */
+@media print {
+    body {
+        background: white;
+    }
+    .page {
+        margin: 0;
+        box-shadow: none;
+        border-radius: 0;
+    }
+    .content {
+        padding: 32px 40px 34px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="page">
+
+<div class="content">
+
+<h2>Cover Letter</h2>
+
+<p class="greeting">
+Dear Ms. Schiradin,
+</p>
+
+<p>
+I would like to apply for the <strong>Senior Software Developer</strong> position in the <strong>CoE Metadata & Domain Alignment</strong> team.
+</p>
+
+<p>
+Over the past 4+ years at SAP, I have mainly worked as a full-stack engineer with a strong focus on Java backend, taking ownership of features end-to-end — from clarifying requirements and designing solutions to implementation, testing, and delivery. I enjoy working on complex problems and understanding how different parts of a system fit together in the bigger picture.
+</p>
+
+<p>
+In my current role, I regularly contribute to technical decisions and requirements clarification together with different teams and stakeholders. One of the larger initiatives I have worked on is the replatforming of SAP Landscape Management from the NetWeaver stack to Jakarta. Another example is a GitHub-based versioning integration for productive LaMa content, which I drove end-to-end.
+</p>
+
+<p>
+Recently, I have also been expanding my DevOps experience, working on service lifecycle automation, containerization, and Kubernetes deployments. I have explored and proposed AI/LLM-based improvements for internal workflows and product features after participating in internal AI Hackathons and Innoweeks.
+</p>
+
+<p>
+Being a University lecturer and internal trainer has strengthened my ability to explain complex topics clearly and support others in their development. I regularly mentor colleagues and contribute to knowledge sharing within the team.
+</p>
+
+<p>
+The work of the CoE Metadata & Domain Alignment team is particularly interesting to me, especially the vision around self-describing services and improving integration across systems. I would be glad to contribute and continue growing in this direction.
+</p>
+
+<p class="signature">
+Kind regards,
+<br>
+Pavel Ivanov
+</p>
+
+</div>
+
+</div>
+
+</body>
+</html>
